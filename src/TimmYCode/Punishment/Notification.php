@@ -13,7 +13,7 @@ class Notification
 	{
 		foreach (SpyOne::getInstance()->getServer()->getOnlinePlayers() as $onlineplayer) {
 			if ($onlineplayer->hasPermission("spyone.notify")) {
-				$onlineplayer->sendMessage(SpyOne::PREFIX . $player->getNameTag() . " §7flagged for§8 -> §b" . substr($moduleName, 4) . " §7Ping [§b" . PlayerUtil::getPing($player) . "§7]");
+				$onlineplayer->sendMessage(SpyOne::PREFIX . $player->getNameTag() . " §cflagged for §b" . substr($moduleName, 4) . " §8[§bPing:§e" . PlayerUtil::getPing($player) . "§8]");
 			}
 		}
 	}
