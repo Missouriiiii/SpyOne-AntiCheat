@@ -10,7 +10,7 @@ use TimmYCode\Event\WatchEventListener;
 class SpyOne extends PluginBase
 {
 
-	const PREFIX = "§0[§bSpy§fOne§0]§7 ";
+	const PREFIX = "§7[§bAnticheat§7]§l§e »§r ";
 	private static self $instance;
 
 	public function onEnable(): void
